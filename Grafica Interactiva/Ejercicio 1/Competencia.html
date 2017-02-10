@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Historia de la Bicicleta</title>		
+		<!-- Codificación de caracteres Unicode -->
+		<meta charset="UTF-8">
+
+		<!-- Línea usada para que se muestre el diseño adaptativo en smartphones y tablets -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- Cambia el color de la barra de direcciones en Android 5.0+ -->
+		<meta name="theme-color" content="#000">
+		<!-- Mis css -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css"> 
+		<script type="text/javascript" src="Scripts/lightbox.js"></script> 
+		<script src="http://code.jquery.com/jquery.js"></script> 
+		<script type="text/javascript" src="Scripts/cambia.js"></script>
+			
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--Menu de navegacion-->
+		<div class="menu">
+			<ul class = "navbar">
+				<li><a href="Index.html">HOME</a></li>
+			<li><a href="Tipo1.html">MODALIDADES</a>
+					<ul>
+						<li><a href="javascript:showLightbox();">Ruta</a></li> 
+						<li><a href="javascript:showLightbox1();">MTB</a></li>
+						<li><a href="javascript:showLightbox2();">BMX</a></li>
+					</ul>
+				</li>
+				<li><a href="Competencia.html">COMPETENCIAS</a></li>
+				<li><a href="History.html">HISTORIA</a></li>			
+			</ul>	
+		</div>
+		<!-- Contenido de la pagina -->
+		<div class="ifr">
+			<div class="teboton">
+				<div class="textbo">
+				<p>Pulse el boton de la pagina que desee cargar en el recuadro de la izquierda:</p>
+				<div clasS="boton">	
+					<center><input type="button" value=" &nbsp; La vuelta a España &nbsp;&nbsp;"  onclick="javascript:cambia();" /></center>
+					<center><input type="button" value=" &nbsp;&nbsp; Le Tour de France &nbsp;&nbsp;&nbsp;"  onclick="javascript:cambia1();" /></center>
+					<center><input type="button" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giro d´Italia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"  onclick="javascript:cambia2();" /></center>
+				</div>
+				</div>
+			</div>
+			<div class="boxfram">
+			<iframe id="cam" src="http://lamonomagazine.com/wp-content/uploads/2014/03/luces-led-bicicletas-monkey-light.gif" width="1000" height="500"></iframe>			
+			</div>		
+		</div>
+		
+		
+		<div id="over" class="overbox">
+				<div id="inbox">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zFkJeSjRC8Y" frameborder="0" allowfullscreen></iframe>
+					<a href="javascript:hideLightbox();"></br>Salir del video</a>
+					<a href="Tipo1.html"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ir a Modalidades</a>
+				</div>
+			</div>
+			<div id="fade" class="fadebox">&nbsp;</div>
+			
+			<div id="over1" class="overbox">
+				<div id="inbox">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/MwdrGkA315Y" frameborder="0" allowfullscreen></iframe>
+					<a href="javascript:hideLightbox1();"></br>Salir del video</a>
+					<a href="Tipo1.html"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ir a Modalidades</a>
+				</div>
+			</div>
+			<div id="fade1" class="fadebox">&nbsp;</div>
+			
+			<div id="over2" class="overbox">
+				<div id="inbox">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/UAwosY_cenc" frameborder="0" allowfullscreen></iframe>
+					<a href="javascript:hideLightbox2();"></br>Salir del video</a>
+					<a href="Tipo1.html"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ir a Modalidades</a>
+				</div>
+			</div>
+			<div id="fade2" class="fadebox">&nbsp;</div>
+		
+		<!-- Pie de página -->
+		<div class="footpag">
+			<center>
+				<a href="mapa.html">Mapa del sitio</a>
+			</center>
+			<br> © SEBASTIÁN MORALES GARZÓN
+		</div>
+	</body>
+</html>

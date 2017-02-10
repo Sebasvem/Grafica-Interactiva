@@ -1,0 +1,32 @@
+﻿Mario world
+
+El juego es basado en el clasico juego de Nintendo.
+
+Aqui el personaje debe encontrar unas monedas que se encuentran ocultas,
+para comprarle un regalo a su novia peach.
+
+Controles:
+
+Mario se desplaza hacia la Izquierda o Derecha con las felchas del teclado y
+encuentra los objetos ocultos presionando la Barra Espaceadora
+
+Solucion:
+
+Cada moneda que se encuentre dara pistas sobre la ubicacion de las demas.
+La primera moneda se encuentra iniciando el juego.
+La segunda moneda se encuentra debajo de la 2 [?]
+La tercera moneda se encuentra debajo del mario que esta en la imagen del fondo
+La cuarta moneda se encuentra entre la tortuga y el ultimo tubo.
+Despues de encontrar todas las monedas mario debe ubicarse entre la 1ra y 2da moneda
+
+Imagenes:
+
+http://image.noelshack.com/fichiers/2012/16/1334589788-Mario.png
+https://noobtuts.com/content/unity/2d-super-mario-bros-game/unity_super_mario_bros.png
+https://noobtuts.com/content/unity/2d-super-mario-bros-game/bush_cloud_ingame.png
+http://vignette1.wikia.nocookie.net/mario/images/3/38/Moneda.png/revision/20120503180834?path-prefix=es
+
+
+http://www.learnmyway.com/sites/default/files/courses/justyourtype/images/key_space_bar_small.png
+
+http://vignette1.wikia.nocookie.net/mario/images/e/e2/Peach.png/revision/latest?cb=20101206012036&path-prefix=es

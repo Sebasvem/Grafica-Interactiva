@@ -1,0 +1,587 @@
+@charset "UTF-8";
+@import "lesshat";
+
+/*Responsive*/
+
+/* Smartphones */
+
+@media screen and ( max-width: 480px) {
+    /* Disminuye la fuente */
+    body,
+    .card-text {
+        font-size: 17px;
+    }
+    .banner,
+    .empty,
+    .title {
+        font-size: 25px;
+    }
+    .menu {
+        font-size: 20px;
+    }
+    .collage .image:after {
+        font-size: 35px;
+    }
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card .image:after {
+        font-size: 25px;
+    }
+    /* Hace que las imagenes de la pagina de inicio ocupen todo el ancho */
+    .collage-image {
+        width: 100%;
+        height: 200px;
+    }
+    /* Muestra las tarjetas en columna */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card img {
+        max-width: 100%;
+    }
+    .card {
+        margin: 20px 0;
+    }
+    /* Quita el margen de los contenedores y del titulo */
+    .card-container,
+    .container,
+    title,
+    .horizontal-card {
+        margin: 0;
+    }
+    /* Hace que las tarjetas horizontales se muestren como verticales */
+    .horizontal-card-content {
+        width: 100%;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Tablets, iPad */
+
+@media screen and ( min-width: 480px) and ( max-width: 768px) {
+    /* Disminuye la fuente */
+    body {
+        font-size: 20px;
+    }
+    .banner,
+    .empty {
+        font-size: 25px;
+    }
+    .menu {
+        font-size: 20px;
+    }
+    .menu li ul li {
+        font-size: 0.8em;
+    }
+    .collage .image:after {
+        font-size: 40px;
+    }
+    .card .image:after {
+        font-size: 22px;
+    }
+    .horizontal-card {
+        margin: 0 30px;
+    }
+    /* Hace que las imagenes de la pagina de inicio ocupen cada una la mitad */
+    /* Disminuye la altura de las imagenes en la pagina de inicio */
+    .collage-image {
+        width: 50%;
+        height: 300px;
+    }
+    /* Quita el margen de los contenedores y del titulo */
+    .card-container,
+    .container,
+    title {
+        margin: 0;
+    }
+    /* Hace que las tarjetas horizontales se muestren como verticales */
+    .horizontal-card-content,
+    .card-content {
+        width: 100%;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Portatiles y pantalla de escritorio */
+
+@media screen and ( min-width: 768px) {
+    /* Fuentes para estas pantallas */
+    body {
+        font-size: 20px;
+        background-size: 100%;
+    }
+    .menu {
+        font-size: 25px;
+    }
+    .banner,
+    .empty {
+        font-size: 30px;
+    }
+    .collage .image:after {
+        font-size: 50px;
+    }
+    .card .image:after {
+        font-size: 25px;
+    }
+    /* Hace que las imagenes de la pagina de inicio ocupen cada una la mitad */
+    .collage-image {
+        background-position: center;
+        width: 50%;
+        height: 400px;
+    }
+    .title {
+        margin: 0 10%;
+    }
+}
+
+/* Elimina el margin y padding de todas las etiquetas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Fuente del sitio web y fondo negro */
+
+body {
+	background: black;
+    background-attachment: fixed;
+	max-width: 1370px;
+	
+}
+
+p { 
+    padding-top: 0px;
+    padding-bottom: 5px;	
+}
+
+ul,ol{
+	list-style:none;
+}
+img{
+	border:groove;
+	border-radius:10px;
+}
+/*Codigo Css para el menu*/
+.menu{
+	background #000;
+    padding: 0px 0px 66px 0px;
+    z-index: 1;
+    color: #0ee1c8;
+}
+
+.navbar{
+	opacity:1;
+	width:100%;
+	margin: 0 0 0 0px;/*Arriba, Derecha, Abajo, Izquierda*/ 
+	font-family: Orbitron;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.navbar li a{	
+	background-color: black; 
+	color: #fff;
+	text-decoration:none;
+	padding:20px 102.5px; /*Cajas de los item del menu*/
+	display:block;
+	float: center;	
+}
+
+.navbar > li {
+	float:left;
+	text-align: center;
+	
+}
+
+.navbar li a:hover{
+	background-color:#434343;
+	color: blue;
+}
+
+.navbar li ul{
+	display:none;
+	margin: 0 0 0 11px;
+	position: absolute;
+	font-size: 14px;
+	font-weight: normal;
+	width: 360px;
+	z-index: 1000;
+
+}
+.navbar li:hover > ul {
+	display:block;
+	
+}
+/*Contenido de las diferentes paginas*/
+.content{
+	background: url(../Images/riding.jpg);
+    background-size: contain;
+	font-family: 'Fredericka the Great';
+	color: #000;
+	font-size: 27px;
+	font-weight: normal;
+	padding: 10px 10px 0px 10px; /* arriba derecha abajo izqueirda*/
+}
+/*Contenido de la pagina Tipo1.html*/
+.contentipo{
+	background: url(../Images/riding.jpg);
+    background-size: contain;
+	font-family: 'Fredericka the Great';
+	color: #000;
+	font-size: 27px;
+	font-weight: normal;
+	padding: 10px 10px 5px 0px; /* arriba derecha abajo izqueirda*/
+	float: top;
+	
+}
+
+.contentipo a{
+	font-family: Orbitron;
+	font-size: 15px;
+	color: blue;
+}
+.contentipo a:hover{
+	color: white;
+}
+
+.rutext p{
+	border: solid 3px gray;
+	border-radius: 10px;
+	width: 600px;
+	height: 125px;
+	position: relative;
+	float: right;
+	right: 240px;
+	top: 0px;
+	font-family: "Architects Daughter", cursive;
+	font-size: 16.5px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 10px;
+	background: #E6E6E6;
+	opacity: 0.5;
+}
+.mtext p{
+	border: solid 3px gray;
+	border-radius: 10px;
+	width: 600px;
+	height: 125px;
+	position: relative;
+	float: right;
+	right: 239px;
+	top: 0px;
+	font-family: "Architects Daughter", cursive;
+	font-size: 16.5px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 10px;
+	background: #E6E6E6;
+	opacity: 0.5;
+}
+.bmtext p{
+	border: solid 3px gray;
+	border-radius: 10px;
+	width: 600px;
+	height: 125px;
+	position: relative;
+	float: right;
+	right: 239px;
+	top: -33px;
+	font-family: "Architects Daughter", cursive;
+	font-size: 16.5px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 10px;
+	background: #E6E6E6;
+	opacity: 0.5;
+}
+
+
+.mapa{
+	background: #fff;
+}
+
+.mapa area:hover{
+	opacity: 0.3;
+}
+
+.image{
+	margin: 0px 0px;
+	border-radius: 10px;
+	}
+
+.image1{
+		float: left;
+		border-radius: 10px;
+	}
+/*Div con scroll en la pagina history.html*/
+.description{
+	opacity: 0.5;
+	width: 470px;
+	height: 510px;
+	background: #fff;
+	float: right;	
+	font-family: "Architects Daughter", cursive;
+	font-size: 20px;
+	font-weight: bold;
+	overflow-y: scroll; /*Coloca una barra de desplazamiento al div*/
+	border-radius:10px; /*Ovala las esquinas sea de un div o una imagen o border*/
+}
+
+.description p{
+	text-align: justify;
+	padding: 20px 20px 20px 20px; /* arriba derecha abajo izqueirda*/
+}
+
+.title p{
+	font-size: 30px;
+	text-align: center;
+	padding: 20px 20px 0px 20px;
+	font-weight: bold;
+	color: blue;
+}
+/*light box usado en todas las paginas*/
+.fadebox {
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.overbox {
+display: none;
+position: absolute;
+top: 25%;
+left: 30%;
+width: 41.8%;
+height: 50%;
+z-index:1002;
+overflow: contain;
+font-family: Orbitron;
+color:blue;
+}
+.overbox a{
+color:blue;
+}
+
+#inbox {
+	background: #000;
+	border: solid 3px #CCCCCC;
+	padding: 2px;
+	font-family: Orbitron;
+	font-size: 15px;
+	width: 560px;
+}
+#inbox a:link{
+	text-decoration:none;
+}
+
+
+.rubox{
+	width: 1350px;
+	height: 150px;
+	border: none;
+	margin: 10px 10px 20px 0;
+	top:20px;
+	background: url(../Images/premio.jpg);
+	background-size: cover;
+}
+.mtbbox{
+	width: 1350px;
+	height: 150px;
+	/*border: solid 2px blue;*/
+	margin: 20px 10px 20px 0;
+	top:20px;
+	background: url(../Images/montañas.png);
+	background-size: contain;
+}
+.bmxbox{
+	width: 1350px;
+	height: 150px;
+	/*border: solid 2px blue;*/
+	margin: 20px 10px 20px 0; /* arriba derecha abajo izqueirda*/
+	top:20px; 
+	background: url(../Images/street.jpg);
+	background-size: cover;
+}
+
+/*Imagen reducida*/
+
+.div-img1{
+	position: absolute;
+	top: 90px;
+	left: 250px;
+    display: block;
+	/*border: solid 3px black;*/
+	width: 300px;
+	height: 140px;
+}
+.div-img1 img{
+	border: solid 10px gray;
+	position: absolute;
+	top:-234px;
+	left:-327px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280%;   
+    transform:scale(0.25);
+    -moz-transform:scale(0.25);
+	-webkit-transform:scale(0.25);
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out;
+    border-radius: 40px;
+	
+    } 
+.div-img2{
+	position: absolute;
+	top: 254px;
+	left: 250px;
+    display: block;
+	/*border: solid 3px black;*/
+	width: 300px;
+	height: 140px;
+}
+.div-img2 img{	
+	border: solid 10px gray;
+	position: absolute;
+	top:-223px;
+	left:-329px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 845px; 
+	height: 580px;
+    transform:scale(0.25);
+    -moz-transform:scale(0.25);
+	-webkit-transform:scale(0.25);
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out;
+    border-radius: 40px;	
+    } 
+.div-img3{
+	position: absolute;
+	top: 427px;
+	left: 250px;
+    display: block;
+	/*border: solid 3px black;*/
+	width: 200px;
+	height: 145px;
+}
+.div-img3 img{
+	border: solid 10px gray;
+	position: absolute;
+	top:-226px;
+	left:-329px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 845px;
+	height: 580px;
+    transform:scale(0.25);
+    -moz-transform:scale(0.25);
+	-webkit-transform:scale(0.25);
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out;
+    border-radius: 40px;	
+    } 	
+.contentipo img:hover{        
+    transform:scale(0.3);  
+    -moz-transform:scale(0.3); 
+    -webkit-transform:scale(0.3);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;    
+   } 
+
+/*Contenido de la pagina competencia.html*/
+
+.ifr{
+	background: url(../Images/riding.jpg);
+    background-size: contain;
+	font-family: 'Fredericka the Great';
+	color: #000;
+	font-size: 27px;
+	font-weight: normal;
+	padding: 10px 10px 0px 10px; /* arriba derecha abajo izqueirda*/
+	
+}
+.teboton{
+	background:  #e6e6e6;
+	height: 280px;
+	width: 290px;
+	position: relative;
+	float: right;
+	top: 100px;
+	font-family: "Architects Daughter", cursive;
+	font-weight: bold;
+	border: solid 3px black;
+	border-radius: 10px;
+	opacity: 0.7;
+	padding: 10px;
+	
+	
+}   
+.textbo p{
+	text-align: justify;
+	opacity: 1;
+}
+
+.boton {
+	opacity:1;
+}
+
+
+.boxfram{
+	position: relative;
+	top: 0px;
+	width: 1000px;
+	height: 500px;
+	padding: 0 0 10px 0;
+	background: none;
+	margin:0 0 10px 0;
+}
+
+/* Pie de pagina */
+
+.footpag {
+    color: #0ee1c8;
+    padding: 10px 10px 10px 10px;
+    font-size: 10px;
+    background: #000;
+	background-size: contain;
+    text-align: center;
+    color: #fff;
+    font-family: "Orbitron";
+	float: bottom;
+}
+
+.footpag a {
+    padding: 0 10px -10px 10px;
+    color: #fff;
+    font-family: 'Orbitron';
+    font-size: 15px;
+}
+
+.footpag a:hover {
+    color: blue;
+}

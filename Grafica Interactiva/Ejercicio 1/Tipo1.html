@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Historia de la Bicicleta</title>		
+		<!-- Codificación de caracteres Unicode -->
+		<meta charset="UTF-8">
+
+		<!-- Línea usada para que se muestre el diseño adaptativo en smartphones y tablets -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- Cambia el color de la barra de direcciones en Android 5.0+ -->
+		<meta name="theme-color" content="#000">
+		<!-- Mis css y scripts-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="Scripts/lightbox.js"></script> 		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--Menu de navegacion-->
+		<div class="menu">
+			<ul class = "navbar">
+				<li><a href="Index.html">HOME</a></li>
+			<li><a href="Tipo1.html">MODALIDADES</a>
+					<ul>
+						<li><a href="javascript:showLightbox();">Ruta</a></li> 
+						<li><a href="javascript:showLightbox1();">MTB</a></li>
+						<li><a href="javascript:showLightbox2();">BMX</a></li>	
+					</ul>
+				</li>
+				<li><a href="Competencia.html">COMPETENCIAS</a></li>
+				<li><a href="History.html">HISTORIA</a></li>			
+			</ul>	
+		</div>
+		<!-- Contenido de la pagina -->
+		<div class="contentipo">
+			
+			<!-- Seccion de Ruta -->
+			<div class="rubox">
+				<a href="javascript:showLightbox();">						
+					<div class="div-img1" >
+						<img class="img" src="images/Ruta.jpg" title="Ruta" alt="Ruta"> <!--video1-->
+					</div>				
+				</a>
+				<div class="rutext">
+					<p>El ciclismo en ruta es una modalidad que consiste en competir en carretera, a diferencia del ciclismo en pista 
+					que queda reducido al óvalo del velódromo 
+					El ciclismo en ruta es un deporte muy exigente y no debe ser confundido con el cicloturismo porque en este hay que ser totalmente 
+					autónomo sin asistencias al contrario que en el ciclismo en ruta que está todo mucho más controlado.</p>
+				</div>				
+				<div id="over" class="overbox">
+					<div id="inbox">
+						<A id="TRuta"></A>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/zFkJeSjRC8Y" frameborder="0" allowfullscreen></iframe>
+						<a href="javascript:hideLightbox();"></br>Salir del video</a>
+					</div>
+				</div>
+				<div id="fade" class="fadebox">&nbsp;</div>
+			</div>
+			
+			<!-- Seccion de MTB -->
+			<div class="mtbbox">
+				<a href="javascript:showLightbox1();">
+					<div class="div-img2" >
+						<img class="img" src="images/MTB.jpg" title="mtb" alt="mtb"> <!--video2-->
+					</div>	
+				</a>
+				<div class="mtext">
+					<p>El ciclismo de montaña o mountain bike es un deporte de competición relativamente nuevo considerado un deporte de inercia que 
+					surge en Estados Unidos a finales de los años 70 y tiene lugar en terrenos montañosos o en circuitos naturales generalmente a 
+					través de bosques por caminos angostos con cuestas empinadas, obstáculos y rutas sinuosas.
+					</p>
+				</div>	
+				<div id="over1" class="overbox">
+					<div id="inbox">
+					<A id="TMTB"></A>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MwdrGkA315Y" frameborder="0" allowfullscreen></iframe>
+						<a href="javascript:hideLightbox1();"></br>Salir del video</a>
+					</div>
+				</div>
+				<div id="fade1" class="fadebox">&nbsp;</div>
+			</div>
+			
+			<!-- Seccion de BMX -->
+			<div class="bmxbox">
+				<<a href="javascript:showLightbox2();">
+					<div class="div-img3" >
+						<img class="img" src="images/BMX.jpg" title="bmx" alt="bmx">
+					</div>	
+				</a>
+				<div class="bmtext">
+					<p>El BMX (Bicycle motocross) es una modalidad acrobática del ciclismo, entre sus modalidades
+					destaca el Race, que se realiza en una pista parecida a las pistas de motocross. La principal diferencia es la tierra 
+					utilizada. La de motocross suele ser una tierra húmeda, mientras que la de race es una arena arcillosa compacta para
+					evitar incrustaciones de la bicicleta.</p>
+				</div>	
+				<div id="over2" class="overbox">
+					<div id="inbox">
+					<A id="TBMX"></A>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/UAwosY_cenc" frameborder="0" allowfullscreen></iframe>
+						<a href="javascript:hideLightbox2();"></br>Salir del video</a>
+					</div>
+				</div>
+				<div id="fade2" class="fadebox">&nbsp;</div>
+			</div>	
+			
+		</div>
+		<!-- Pie de página -->
+		<div class="footpag">
+			<center>
+				<a href="mapa.html">Mapa del sitio</a>
+			</center>
+			</br> © SEBASTIÁN MORALES GARZÓN
+		</div>
+	</body>
+</html>
